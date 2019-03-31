@@ -29,6 +29,11 @@ args
     'Accepts POST requests only from a specified origin',
     '*'
   )
+  .option(
+    ['e', 'endpoints-origin'],
+    'Accepts GET requests to /_stats and /_live only from a specified origin',
+    '*'
+  )
   .option(['m', 'memory'], 'Use in-memory storage', false, Boolean)
 
 const flags = args.parse(process.argv, { name: pkg.name })
