@@ -42,7 +42,7 @@ test('should send 403 when POSTING from a not allowed origin', async t => {
   try {
     await request.post(`${url}/`, {
       resolveWithFullResponse: true,
-      headers: { origin: 'another origin' }
+      headers: { origin: 'not that origin' }
     })
   } catch (e) {
     t.is(e.statusCode, 403)
