@@ -1,6 +1,6 @@
 {
   "name": "@benwiley4000/fair-analytics",
-  "version": "1.2.2",
+  "version": "1.2.2-urlencoded",
   "description": "Fair Analytics",
   "main": "lib/index.js",
   "engines": {
